@@ -18,13 +18,13 @@ def gerarChavePublica(escolhaInicial):
     
         for contador in range(2, p):
         
-             if (p % contador == 0):
+            if (p % contador == 0):
         
                 multiplos += 1
 
                 return p
 
-             if multiplos != 0:
+            if multiplos != 0:
             
                 print("O primeiro número digitado não é primo, por favor escolha outro:")
                 p = int(input())
@@ -38,19 +38,19 @@ def gerarChavePublica(escolhaInicial):
     
         for cont in range(2,q):
         
-                if (q % cont == 0):
+            if (q % cont == 0):
         
-                    multiplos2 += 1
+                multiplos2 += 1
 
-                    return q
+                return q
 
 
-                if multiplos2 != 0:
+            if multiplos2 != 0:
             
-                    print("O segundo número digitado não é primo, por favor escolha outro:")
-                    q = int(input())
+                print("O segundo número digitado não é primo, por favor escolha outro:")
+                q = int(input())
 
-                    return verificacaoPrimoQ(q)
+                return verificacaoPrimoQ(q)
 
 
     ## Aqui chamamos as funções para que elas possam funcionar:
@@ -93,10 +93,8 @@ def gerarChavePublica(escolhaInicial):
 
         
        ## Caso o valor da função seja 1, significa que os números são coprimos!
-   
-       def coprimosEN():
-    
-         if mdc2 == 1:
+        
+    if mdc2 == 1:
 
 
             ## Este comando cria um arquivo e permite que adicionemos algo nele:
@@ -124,16 +122,16 @@ def gerarChavePublica(escolhaInicial):
 
     while mdc2 != 1:
 
-               print("O número escolhido não é coprimo à expressão (p - 1) * (q - 1). Por favor, tente novamente!")
-               e = int(input("Digite outro valor: "))
+            print("O número escolhido não é coprimo à expressão (p - 1) * (q - 1). Por favor, tente novamente!")
+            e = int(input("Digite outro valor: "))
 
            ## Aqui chamamos a função mdc para que o novo valor seja computado
-               mdc(e, N)
+            mdc(e, N)
 
-               print(e, N)
+            print(e, N)
            ## Depois, mandamos o novo valor para a função "coprimosEN" para ser verificado
                
-                return coprimosEN()
+    
         
 
     ## Aqui chamamos a função "coprimosEN" para que ela possa verificar se os valores de "e" e "N" são coprimos
